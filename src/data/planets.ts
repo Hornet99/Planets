@@ -1,0 +1,138 @@
+export interface Planet {
+  id: string;
+  name: string;
+  nameRu: string;
+  radius: number; // visual radius in px
+  realRadius: string; // actual radius
+  distanceFromSun: string; // distance in km
+  orbitalPeriod: string; // orbital period
+  orbitRadius: number; // visual orbit radius in px
+  orbitDuration: number; // animation duration in seconds (relative)
+  color: string;
+  gradient: string;
+  description: string;
+  emoji: string;
+}
+
+export const planets: Planet[] = [
+  {
+    id: 'mercury',
+    name: 'Mercury',
+    nameRu: 'Меркурий',
+    radius: 6,
+    realRadius: '2 439 км',
+    distanceFromSun: '57,9 млн км',
+    orbitalPeriod: '88 дней',
+    orbitRadius: 70,
+    orbitDuration: 8,
+    color: '#b5b5b5',
+    gradient: 'radial-gradient(circle at 30% 30%, #d4d4d4, #8a8a8a, #5c5c5c)',
+    description: 'Самая маленькая и ближайшая к Солнцу планета.',
+    emoji: '☿',
+  },
+  {
+    id: 'venus',
+    name: 'Venus',
+    nameRu: 'Венера',
+    radius: 10,
+    realRadius: '6 052 км',
+    distanceFromSun: '108,2 млн км',
+    orbitalPeriod: '225 дней',
+    orbitRadius: 105,
+    orbitDuration: 14,
+    color: '#e8cda0',
+    gradient: 'radial-gradient(circle at 30% 30%, #f5e6c8, #e8cda0, #c4956a)',
+    description: 'Самая горячая планета с плотной атмосферой из CO₂.',
+    emoji: '♀',
+  },
+  {
+    id: 'earth',
+    name: 'Earth',
+    nameRu: 'Земля',
+    radius: 11,
+    realRadius: '6 371 км',
+    distanceFromSun: '149,6 млн км',
+    orbitalPeriod: '365,25 дней',
+    orbitRadius: 145,
+    orbitDuration: 20,
+    color: '#4da6ff',
+    gradient: 'radial-gradient(circle at 30% 30%, #7ec8e3, #4da6ff, #2d6b9e)',
+    description: 'Наш дом — единственная известная планета с жизнью.',
+    emoji: '🌍',
+  },
+  {
+    id: 'mars',
+    name: 'Mars',
+    nameRu: 'Марс',
+    radius: 8,
+    realRadius: '3 390 км',
+    distanceFromSun: '227,9 млн км',
+    orbitalPeriod: '687 дней',
+    orbitRadius: 185,
+    orbitDuration: 30,
+    color: '#e07050',
+    gradient: 'radial-gradient(circle at 30% 30%, #f09070, #e07050, #a04030)',
+    description: 'Красная планета с самой высокой горой — Олимп.',
+    emoji: '♂',
+  },
+  {
+    id: 'jupiter',
+    name: 'Jupiter',
+    nameRu: 'Юпитер',
+    radius: 24,
+    realRadius: '69 911 км',
+    distanceFromSun: '778,5 млн км',
+    orbitalPeriod: '11,86 лет',
+    orbitRadius: 245,
+    orbitDuration: 55,
+    color: '#d4a574',
+    gradient: 'radial-gradient(circle at 30% 30%, #f0c896, #d4a574, #a07040)',
+    description: 'Самая большая планета — газовый гигант с Большим красным пятном.',
+    emoji: '♃',
+  },
+  {
+    id: 'saturn',
+    name: 'Saturn',
+    nameRu: 'Сатурн',
+    radius: 20,
+    realRadius: '58 232 км',
+    distanceFromSun: '1 434 млн км',
+    orbitalPeriod: '29,46 лет',
+    orbitRadius: 310,
+    orbitDuration: 80,
+    color: '#e8d5a0',
+    gradient: 'radial-gradient(circle at 30% 30%, #f5ecd0, #e8d5a0, #c4a860)',
+    description: 'Знаменита своими кольцами из льда и камней.',
+    emoji: '♄',
+  },
+  {
+    id: 'uranus',
+    name: 'Uranus',
+    nameRu: 'Уран',
+    radius: 15,
+    realRadius: '25 362 км',
+    distanceFromSun: '2 871 млн км',
+    orbitalPeriod: '84 года',
+    orbitRadius: 370,
+    orbitDuration: 120,
+    color: '#7de0e0',
+    gradient: 'radial-gradient(circle at 30% 30%, #a0f0f0, #7de0e0, #40a0b0)',
+    description: 'Ледяной гигант, вращающийся «на боку».',
+    emoji: '♅',
+  },
+  {
+    id: 'neptune',
+    name: 'Neptune',
+    nameRu: 'Нептун',
+    radius: 14,
+    realRadius: '24 622 км',
+    distanceFromSun: '4 495 млн км',
+    orbitalPeriod: '164,8 лет',
+    orbitRadius: 420,
+    orbitDuration: 160,
+    color: '#4070e0',
+    gradient: 'radial-gradient(circle at 30% 30%, #6090ff, #4070e0, #2040a0)',
+    description: 'Самая далёкая планета с сильнейшими ветрами.',
+    emoji: '♆',
+  },
+];
